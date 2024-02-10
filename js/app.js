@@ -9,7 +9,7 @@ qtde.value = 1;
 listaProdutos.push(lista.innerText);
 
 function adicionar() {
-    if (qtde.value) {
+    if (qtde.value >= 1) {
         let valorProduto = valorToString(produto.value);
         let valorTotal = valorToString(total.innerText);
         let quantidade = qtde.value + 'x ';
@@ -37,7 +37,7 @@ function adicionar() {
         console.log(listaProdutos);
 
     } else {
-        alert('Erro: preencha o campo quantidade');
+        alert('Erro: preencha o campo quantidade corretamente');
     }
 }
 
